@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação WhatsApp</title>
+    <link rel="stylesheet" href="./utils/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="./utils/img/1593705.jpg" alt="Foto de Perfil">
+                <div class="profile-info">
+                    <p>Online</p>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar ou começar uma nova conversa">
+            </div>
+            <div class="chats">
+                <div class="chat" data-name="Maria" data-status="Online" data-messages='[{"type": "received", "text": "Olá, como vai?", "time": "10:00 AM"}, {"type": "sent", "text": "Oi! Estou bem, e você?", "time": "10:01 AM"}]'>
+                    <img src="./utils/img/conversa.jpg" alt="Contato 1">
+                    <div class="chat-info">
+                        <h3>Maria</h3>
+                        <p>Oi! Estou bem, e você?</p>
+                    </div>
+                </div>
+                <div class="chat" data-name="João" data-status="Offline" data-messages='[{"type": "received", "text": "Oi, tudo bem?", "time": "9:00 AM"}, {"type": "sent", "text": "Tudo ótimo! E você?", "time": "9:01 AM"}]'>
+                    <img src="./utils/img/perfil.jpg" alt="Contato 2">
+                    <div class="chat-info">
+                        <h3>João</h3>
+                        <p>Oi, tudo bem?</p>
+                    </div>
+                </div>
+                <!-- Adicione mais contatos conforme necessário -->
+            </div>
+        </div>
+        <div class="chat-window">
+            <div class="chat-header">
+                <img id="chat-header-img" src="./utils/img/perfil.jpg" alt="Contato">
+                <div class="chat-header-info">
+                    <h3 id="chat-header-name">Contato</h3>
+                    <p id="chat-header-status">Status</p>
+                </div>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <!-- Mensagens irão aparecer aqui -->
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Digite uma mensagem">
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./utils/js/script.js"></script>
+</body>
+</html>
