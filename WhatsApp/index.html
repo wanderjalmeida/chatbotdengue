@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulação WhatsApp</title>
     <link rel="stylesheet" href="./utils/css/styles.css">
 </head>
+
 <body>
     <div class="container">
         <div class="sidebar">
@@ -19,18 +21,17 @@
                 <input type="text" placeholder="Pesquisar ou começar uma nova conversa">
             </div>
             <div class="chats">
-                <div class="chat" data-name="Maria" data-status="Online" data-messages='[{"type": "received", "text": "Olá, como vai?", "time": "10:00 AM"}, {"type": "sent", "text": "Oi! Estou bem, e você?", "time": "10:01 AM"}]'>
+                <div class="chat" data-name="Maria" data-status="Online" data-messages='[]'>
                     <img src="./utils/img/conversa.jpg" alt="Contato 1">
                     <div class="chat-info">
                         <h3>Maria</h3>
-                        <p>Oi! Estou bem, e você?</p>
                     </div>
                 </div>
-                <div class="chat" data-name="João" data-status="Offline" data-messages='[{"type": "received", "text": "Oi, tudo bem?", "time": "9:00 AM"}, {"type": "sent", "text": "Tudo ótimo! E você?", "time": "9:01 AM"}]'>
+                <div class="chat" data-name="João" data-status="Offline" data-messages='[]'>
                     <img src="./utils/img/perfil.jpg" alt="Contato 2">
                     <div class="chat-info">
                         <h3>João</h3>
-                        <p>Oi, tudo bem?</p>
+
                     </div>
                 </div>
                 <!-- Adicione mais contatos conforme necessário -->
@@ -56,4 +57,5 @@
 
     <script src="./utils/js/script.js"></script>
 </body>
+
 </html>
